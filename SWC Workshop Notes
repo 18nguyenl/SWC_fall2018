@@ -1,0 +1,253 @@
+Welcome to Software Carpentry Etherpad!
+
+This pad is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents.
+
+Use of this service is restricted to members of the Software Carpentry and Data Carpentry community; this is not for general purpose use (for that, try etherpad.wikimedia.org).
+
+Users are expected to follow our code of conduct: https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html
+
+All content is publicly available under the Creative Commons Attribution License: https://creativecommons.org/licenses/by/4.0/
+
+###########################################
+
+Welcome to Software Carpentry Workshop!
+
+####
+
+Enternet connection info for off-campus guests
+
+Name: evt-carp
+Password: Fall2018
+
+####
+
+Off-campus guests: Register your vehicle!
+
+https://uta.nupark.com/events/Events/Register/d052ae52-85e0-4106-a96a-f5a64986099a
+
+####
+
+Workshop website: https://annawilliford.github.io/2018-09-22-UTA
+
+This etherpad: https://pad.carpentries.org/2018-09-22-UTA
+
+
+####
+Check Software Installation.  See instructions under  SETUP section on the workshop website  https://annawilliford.github.io/2018-09-22-UTA
+
+    * Git Bash
+    * Notepad/TextWrangler
+    * R from the command promt, RStudio
+
+Bash:  open gitbash terminal, type `bash --version`. You should get an output indicating the version of bash shell
+
+Text Editor: open terminal, type `npp new.txt` if using notepad++; type `edit new.txt` if using Text Wrangler
+
+Git: open gitbash terminal, type `git --version`. You should get an output indicating the version of git
+
+R: open gitbash terminal, type `R --version`. You should get an output indicating the version of R
+
+RStudio: open application, should see 3 or 4 windows. 
+
+####
+This is a hands-on experience with computational tools. Our instructors are teaching with live coding, you are expected to follow along.
+
+If you are falling behind,  we have 2 mechanisms to prevent this:
+     
+1. Sticky notes (red - "need help/wait"; greeen - "got it/go on").  Helpers will come to you. 
+
+2. Etherpad http://pad.software-carpentry.org/2018-09-22-UTA \
+    A place to add links, ask questions, add comments as we go. Helpers will answer your questionis.s.
+    
+We appreciate your feedback!
+At the end of every lesson, please peovide feedback on your sticky notes:
+          red - write down one most confusing concept of the lesson
+          green - write down one concept that was very clearly explained
+
+####
+Link to dataset for the workshop
+https://raw.githubusercontent.com/AnnaWilliford/2017-11-11-UTA/gh-pages/workshop/SWC_fall2017/Data.zip
+https://raw.githubusercontent.com/AnnaWilliford/2017-11-11-UTA/gh-pages/workshop/SWC_fall2017/Data.zip 
+*****************************
+Challenege 2.1
+Create these variables
+mass <- 47.5
+age <-122
+height <- 150
+
+What outputs do these give you?
+mass <- mass  * 2.3 = 109.25
+age <- age -20 =102
+height <- height + 20 =170
+> mass*2.3
+[1] 109.25
+> age-20
+[1] 102
+> height+20
+[1] 170
+
+> is.logical(is.numeric(typeof(is.integer(score))))
+[1] TRUE
+
+> myorder
+[[1]]
+[1] "chicken, soup, salad, tea"
+
+[[2]]
+[1] liquid solid 
+Levels: liquid solid
+
+[[3]]
+[1] 4.99 2.99 3.29
+
+
+
+#### CHALLENGE 2.2 #####
+**Challenge 2.2:** Learn how to read the output of nested help functions```TASK: Break the following expression into multiple single function calls.You will need to assign the output of each function to a variable thatwill serve as an input(argument) for the next function. What is the value of each variable? What does each function do? Assign: `score<-79`is.logical(is.numeric(typeof(is.integer(score))))```
+
+
+**CHALLENGE 2.3**         ```    
+TASK: Try to create a list named 'myorder' that contains  the   following data structures as list elements:    
+    -- Element 1 is a character vector of length 4 that  lists the menu items you ordered from the restaurant:     chicken, soup, salad, tea. 
+       -- Element 2 is a factor that describes the types of menu items    as "liquid" or "solid" categories. 
+          -- Element 3 is a vector that records the cost of each menu item:    4.99, 2.99, 3.29, 1.89.   
+           *Hint: Define your elements first, then create a list with them. 
+              You will need c(), factor() and list() functions    ```
+el1<-(c("Chicken","Soup","Salad","Tea"))
+el1
+el2<-factor(c("solid","liquid","solid","liquid"))
+el2
+el3<-c(4.99,2.99,3.29,1.89)
+el3
+myorder<-list(el1,el2,el3)
+ **CHALLENGE 2.2: Answer**        > ```    
+ > menuItems<-c("chicken", "soup", "salad", "tea")    
+ > menuType<-factor(c("solid", "liquid", "solid", "liquid")) 
+    > menuCost<-c(4.99, 2.99, 3.29, 1.89)   
+     > myorder<-list(menuItems, menuType, menuCost)    > ```
+
+Link to R_intro.R:
+    https://www.dropbox.com/s/0vt4xtl4vc13p93/R_intro.R?dl=0
+
+#### DATAFRAME and SUBSETTING
+
+https://www.dropbox.com/s/dzcfgdofn1v1i5j/R_subsetting.R?dl=0
+
+## Challenge 1
+
+TASK: Answer the following questions about `myData` object
+1. What is overall object structure? What function will you use?
+
+2. Can you tell the data type of the elements in each column?
+
+3. Can you extract 3rd and 5th column of the dataset?
+4. Can you extract the list of countries in this dataset?
+### Hint: use unique(). ###
+5. Can you get a part of this dataset that includes information about Sweden?
+6. Can you extract all countries for which life expectancy is below 70?
+7. Can you make a new column that contains population in units of millions of people?
+
+## Challenge 2
+
+Write a script to calculate mean gdpPerCap for African and European countries.
+Try to make a barplot to display your results.
+
+You might need to read help for 'mean' and 'barplot' functions
+?mean
+?barplot
+0
+
+
+#############LINUX SHELL###############
+
+#Dropboxlink
+https://www.dropbox.com/s/jmitb63cc94v40w/History.txt?dl=0
+
+
+
+Make a diagram of our directory structure (~/Desktop/SWC_fall2018/Data/) and practice navigation commands.
+a) Find out where you currently are
+b) Go to Data folder, what is there?
+c) Go back where you came from (with cd command)
+d) Go one directory up
+e) Try relative and absolute paths
+f) Get comfortable navigating across file system
+
+Next we will work with files from the Data folder that you moved to SWC_fall2018 folder in the beginning Namibia
+Nepal
+Netherlands
+New_Zealand
+Nicaragua
+Niger
+Nigeria
+Norway
+Oman
+Pakistan
+Panama
+Paraguay
+Peru
+Philippines
+Poland
+Portugal
+Puerto_Rico
+Reunion
+Romania
+Rwanda
+Sao_Tome_and_Principe
+Saudi_Arabia
+Senegal
+Serbia
+Sierra_Leone
+Singapore
+Slovak_Republic
+Slovenia
+Somalia
+South_Africa
+Spain
+Sri_Lanka
+Sudan
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tanzania
+Thailand
+Togo
+Trinidad_and_Tobago
+Tunisia
+Turkey
+Uganda
+United_Kingdom
+United_States
+Uruguay
+Venezuela
+Vietnam
+West_Bank_and_Gaza
+of this workshop. Please move Data folder to unix_shell folder. We will keep all the files for Linux lesson in the unix_shell folder from now on. Make sure you understand the directory structure of SWC_fall2018 before we continue.
+
+
+CHALLANGE 4
+What country had the highest "LifeExp" in 2002?
+Use gapminder.txt as an input file and generate Country_HighestLifeExp.txt as your ONLY output file.
+Hint: you can accomplish this by using grep, cut, sort and tail but you might want to look up help pages for some of these command
+
+
+# 1. select all columns of interest - "Country", "Year", and "lifeExp.
+cut -f1,3,4 Data/gapminder.txt > LifeExp_All.txt
+
+#2. get data for 2002 only
+grep 2002 LifeExp_All.txt > LifeExp_2002.txt
+
+#3. sort by 3rd column from min to max
+sort -n -k3 LifeExp_2002.txt > LifeExp_2002_Sorted.txt
+
+#4. select country with highest mortality rate
+tail -n 1 LifeExp_2002_Sorted.txt > CountryHighestLifeExp.txt
+
+#Or as a pipe:
+cut -f1,3,4 Data/gapminder.txt | grep 2002 | sort -n -k3 | tail -n 1 > CountryHighestLifeExp.txt
+
+
+CHALLANGE 5
+Work in groups to write a script (name it MyFirstScript_Good.sh) that would allow user to compare any indices between the countries (not just lifeExp), use data for any year (not just 2002) and write the output to a user-defined output file.

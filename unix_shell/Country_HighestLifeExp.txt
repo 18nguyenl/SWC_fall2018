@@ -1,0 +1,5 @@
+Sao_Tome_and_Principe	2007	199579
+Iceland	2007	301931
+Djibouti	2007	496374
+Equatorial_Guinea	2007	551201
+Montenegro	2007	684736

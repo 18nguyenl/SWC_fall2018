@@ -1,0 +1,21 @@
+# This is a R Markdown Document
+*This is really cool*
+
+## Section 1
+* Item 1
+* Item 2
+* Item 3
+
+### Section 1.1
+
+## Section 2
+1. Item 1
+2. Item 2
+3. Item 3
+
+### Section 2.1
+
+### Section 2.2
+
+## Section 3
+lorem **ipsum**
